@@ -3,6 +3,9 @@
         <h1 class="pinterest_logo">Hojun's world</h1>
     </div>
     <div>
+        <a href="{% url 'articleapp:list' %}">
+            <span>Articles</span>
+        </a>
         <span>nav1</span>
         <span>nav2</span>
         {% if not user.is_authenticated %}
