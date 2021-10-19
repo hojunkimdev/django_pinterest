@@ -77,3 +77,4 @@ fabric.properties
 venv/
 .idea/
 __pycache__/
+media/
