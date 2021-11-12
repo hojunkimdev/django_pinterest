@@ -14,6 +14,8 @@ RUN echo "SECRET_KEY=django-insecure-3+!g5+6y==02g12g=e9woq&_tjywtf*e2#t++l00hs^
 
 RUN python manage.py migrate
 
+RUN python manage.py collectstatic
+
 EXPOSE 8000
 
 CMD ["gunicorn", "django_pinterest.wsgi", "--bind", "0.0.0.0:8000"]
